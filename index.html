@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard | WeatherNow</title>
+
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <nav class="navbar">
+      <h1 class="logo">🌤 WeatherNow</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h2>Check Real-Time Weather Updates</h2>
+      <p>
+        WeatherNow helps you track current weather conditions of any city
+        across the world using live and reliable weather data.
+      </p>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="main-content">
+
+    <!-- SEARCH SECTION -->
+    <section class="search-section">
+      <h3>Search City Weather</h3>
+      <p>
+        Select your city from the dropdown or type manually to view
+        real-time temperature, climate condition, humidity, and wind speed.
+      </p>
+
+      <div class="search-box">
+
+        <!-- CITY DROPDOWN -->
+        <select id="cityDropdown">
+          <option value="">Select City / State</option>
+
+          <optgroup label="Tamil Nadu">
+            <option>Chennai</option>
+            <option>Coimbatore</option>
+            <option>Madurai</option>
+            <option>Tiruchirappalli</option>
+            <option>Salem</option>
+            <option>Erode</option>
+            <option>Tirunelveli</option>
+            <option>Vellore</option>
+            <option>Thoothukudi</option>
+            <option>Kanchipuram</option>
+            <option>Thanjavur</option>
+            <option>Nagercoil</option>
+          </optgroup>
+
+          <optgroup label="Puducherry (UT)">
+            <option>Puducherry</option>
+          </optgroup>
+
+          <optgroup label="Other Indian States">
+            <option>Delhi</option>
+            <option>Mumbai</option>
+            <option>Bangalore</option>
+            <option>Hyderabad</option>
+            <option>Kolkata</option>
+            <option>Pune</option>
+            <option>Ahmedabad</option>
+            <option>Jaipur</option>
+            <option>Chandigarh</option>
+            <option>Thiruvananthapuram</option>
+            <option>Kochi</option>
+            <option>Vijayawada</option>
+            <option>Visakhapatnam</option>
+            <option>Bhubaneswar</option>
+            <option>Patna</option>
+            <option>Ranchi</option>
+            <option>Guwahati</option>
+            <option>Shillong</option>
+          </optgroup>
+        </select>
+
+        <!-- MANUAL INPUT -->
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Or type city name manually"
+        />
+
+        <button id="searchBtn">Get Weather</button>
+      </div>
+    </section>
+
+    <!-- WEATHER RESULT -->
+    <section class="weather-section">
+      <div id="weatherResult" class="weather-card">
+        <p class="placeholder-text">
+          🌍 Weather details will appear here after searching a city.
+        </p>
+      </div>
+    </section>
+
+    <!-- WEATHER HIGHLIGHTS -->
+    <section class="highlights-section">
+      <h3>Today's Weather Highlights</h3>
+
+      <div class="highlights">
+        <div class="highlight-card">
+          <h4>🌡 Temperature</h4>
+          <p>Real-time temperature of the selected city.</p>
+        </div>
+
+        <div class="highlight-card">
+          <h4>💧 Humidity</h4>
+          <p>Shows moisture level in the atmosphere.</p>
+        </div>
+
+        <div class="highlight-card">
+          <h4>🌬 Wind Speed</h4>
+          <p>Indicates current wind conditions.</p>
+        </div>
+
+        <div class="highlight-card">
+          <h4>🌥 Climate</h4>
+          <p>Overall weather condition.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works-section">
+      <h3>How WeatherNow Works</h3>
+
+      <div class="steps">
+        <div class="step-card">
+          <h4>1️⃣ Search City</h4>
+          <p>Select city from list or type manually.</p>
+        </div>
+
+        <div class="step-card">
+          <h4>2️⃣ Fetch Live Data</h4>
+          <p>Weather data is fetched using APIs.</p>
+        </div>
+
+        <div class="step-card">
+          <h4>3️⃣ Display Weather</h4>
+          <p>Instant weather results are shown.</p>
+        </div>
+
+        <div class="step-card">
+          <h4>4️⃣ Save Preferences</h4>
+          <p>Your last searched city is remembered.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WEATHER FACTS -->
+    <section class="weather-facts-section">
+      <h3>Did You Know?</h3>
+
+      <div class="facts">
+        <p>☁ Clouds help regulate Earth’s temperature.</p>
+        <p>🌧 Humidity affects how hot or cold we feel.</p>
+        <p>🌪 Wind speed can rapidly change weather.</p>
+        <p>🌡 Weather forecasts use satellite data.</p>
+      </div>
+    </section>
+
+  </main>
+
+ 
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© 2026 WeatherNow | Built with HTML, CSS & JavaScript</p>
+  </footer>
+ <script type="module" src="js/app.js"></script>
+</body>
+</html>
