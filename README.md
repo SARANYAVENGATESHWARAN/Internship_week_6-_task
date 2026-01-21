@@ -62,7 +62,7 @@ https://api.openweathermap.org/data/2.5/weather
 
 
 ### Example Request
-https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=YOUR_API_KEY&units=metric
+https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=f63f4c58803556d8fbdc56a7be4ded4&units=metric
 ---
 
 ## ⏱️ Asynchronous JavaScript
